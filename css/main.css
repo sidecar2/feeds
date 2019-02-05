@@ -5,7 +5,128 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
+ html, 
+ body {
+     height: 100%;
+ }
+body.expo {
+    /* background-image: url('../img/blurry-bg@2X.png'); */
+    background-image:linear-gradient(-155deg, rgba(15,16,34,0.400) 0%, #313356 100%), 
+    url('../img/fuzzy-gradient@2x.png');
+    background-size: cover, 
+    cover;
+    background-repeat: no-repeat,
+    no-repeat;
+    height: 100%;
+    font-family: Apercu Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+.content-wrapper {
+    margin: 0 auto;
+    width: 92%;
+    min-width: 1024px;
+    color: #ffffff;
+    padding: 16px 0;
+}
+.feed-heading {
+   
+    font-family: "Apercu Pro";
+    display: inline-flex;
+}
+
+.feed-icon {
+    margin-right: 16px;
+} 
+
+h6.helper {
+    color: #ffffff;
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: "Apercu Pro";
+    font-weight: 500;
+    opacity: .8;
+}
+
+.order-container {
+    background: rgba(49,51,86,0.40);
+    margin: 16px 0;
+    border-radius: 4px;
+}
+.heading {
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+img.driver-photo {
+    width: 48px;
+}
+
+ul.table-heading {
+    display: inline;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    text-indent: 16px;
+}
+ul.order {
+    margin: 0 auto;
+    width: 98%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 0;
+}
+ul.table-heading li, ul.order li {
+    display: inline-block;
+    width: 40%;
+    padding: 16px 0;
+    list-style: none;
+}
+ul.order li.order-actions {
+    width: 18%;
+}
+li.customer-name {
+    font-size: 18px;
+    text-indent: 24px;
+}
+
+.order-photo {
+    display: inline-block;
+    vertical-align: top;
+    width: 48px;
+}
+.order-info {
+    display: inline-block;
+    padding-left: 8px;
+}
+.order-info p {
+    padding: 2px;
+    margin: 0;
+    font-size: 18px;
+}
+
+button.complete {
+    padding: 16px 24px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+p.sub-text {
+    font-size: 12px;
+    opacity: .80;
+}
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro-Bold.woff2') format('woff2'),
+        url('/fonts/ApercuPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../fonts/ApercuPro-Medium.woff2') format('woff2'),
+        url('../fonts/ApercuPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
