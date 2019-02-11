@@ -56,6 +56,35 @@ h6.helper {
     opacity: .8;
 }
 
+ul.order-status {
+    list-style: none;
+    
+}
+ul.order-status li {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 12px 6px;
+    opacity: .7;
+    /* border: 1px solid rgba(255, 255, 255, 0.06); */
+}
+ul.order-status li.active {
+    border-bottom: 1px solid #21D1AB;
+    opacity: 1;
+}
+/* ul.order-status li:first-of-type {
+    border-radius: 4px 0 0 4px;
+} */
+ul.order-status li span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px; 
+    color: #fff;
+    background: #21D1AB;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 4px;
+}
 .order-container {
     background: rgba(49,51,86,0.40);
     margin: 16px 0;
