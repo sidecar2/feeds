@@ -21,11 +21,29 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 <div class="content-wrapper">
-  <div class="feed-heading">
-    <img class="feed-icon" src="./img/Handoff-icon.svg">
-    <h2>Driver Hand-Off Feed</h2>
+  <div class="feeds-title">
+    <div class="feed-heading">
+      <img class="feed-icon" src="./img/Handoff-icon.svg">
+      <div class="feeds-header">
+        <h2>Driver Hand-Off Feed</h2>
+        <h6 class="helper"> Mark orders as completed as they get handed off to drivers</h6>
+      </div>
+    </div>
+ 
+  <div class="toggle">
+    <ul class="order-status">
+      <li>
+        <span>
+          3
+        </span>
+        Incoming
+      </li>
+      <li>
+        Completed
+      </li>
+    </ul>
   </div>
-  <h6 class="helper"> Mark orders as completed as they get handed off to drivers</h6>
+</div>
 
   <div class="order-container">
     <div class="heading">
@@ -49,31 +67,122 @@
           <button class="complete">
             Mark Handed-Off
           </button>
+          <img src="img/more.svg" class="open">
         </li>
       </ul>
       <ul class="order">
           <li class="forty"> 
-            <img src="./img/rebecca.png" class="order-photo">
+            <img src="./img/samantha.png" class="order-photo">
             <div class="order-info">
-              <p class="sub-text"> Rebecca</p>
-              <p class="order-info"> Postmates Delivery Order 328</p>
+              <p class="sub-text"> Samantha</p>
+              <p class="order-info"> UberEats Delivery Order 328</p>
             </div>  
           </li>
           <li class="customer-name">
-              Tony 
+              Elizabeth 
           </li>
           <li class="order-actions">
             <button class="complete">
               Mark Handed-Off
             </button>
+            <img src="img/more.svg" class="open">
           </li>
         </ul>
+        <ul class="order open">
+            <li class="forty"> 
+              <img src="./img/samantha.png" class="order-photo">
+              <div class="order-info">
+                <p class="sub-text"> Samantha</p>
+                <p class="order-info"> UberEats Delivery Order 328</p>
+              </div>  
+            </li>
+            <li class="customer-name">
+                Elizabeth 
+            </li>
+            <li class="order-actions">
+              <button class="complete">
+                Mark Handed-Off
+              </button>
+              <img src="img/more.svg" class="open">
+            </li>
+          </ul>
     </div>
   </div>
     <!-- Add your site or application content here -->
-    <p>Its feeds time, baby</p>
+    <div class="popup-overlay">
+        <!--Creates the popup content-->
+         <div class="popup-content">
+           <div class="overlay-header">
+             <div class="modal-heading">
+               <div class="close">
+                 <img src="./img/close.svg">
+               </div>
+               <div class="index">
+                 <span>
+                  In POS · 3
+                </span>
+               </div>
+               <div class="next-order">
+                 Next Order
+               </div>
+             </div>
+            <h2>Pickup Order · Caviar 5439</h2>
+            <div class="order-details">
+              <img src="./img/caviar.png" class="order-photo"> 
+              <h4>Caviar · Adam S</h4>
+            </div>
+          </div>
+          <div class="order-wrapper">
+            <div class="order-items">
+              <div class="item-details"> 
+                <div class="item-head">
+                  <p class="item-name">1× Cheese & Turkey Pepperoni</p>
+                  <p class="price">$25.56</p>
+                </div>
+                <div class="modifiers">
+                  <p class="modifier-group">— Sides</p>
+                  <p class="modifier-name">Jalapeno</p>
+                </div>
+              
+              </div>
+              <div class="item-details">
+                  <div class="item-head"> 
+                    <p class="item-name">1× Cheese & Turkey Pepperoni</p>
+                    <p class="price">$25.56</p>
+                  </div>
+                  <p class="modifier-group">— Sides</p>
+                  <p class="modifier-name">Jalapeno</p>
+                </div>
+            </div>
+            <div class="fullfilment-info">
+              <p class="customer">— Customer</p>
+              <p class="customer-name full">Adam S</p>
+              <p class="customer-name full">617-932-5555</p>
+              <p class="customer">— Order Recieved</p>
+              <p class="customer-name full">10 Mins Ago</p>
+            </div>
+          </div>
+          <div class="order-note">
+            <img src="./img/note.svg">
+              <p>No napkins, no straws and absolutely no styrofoam please :)</p>
+          </div>
+
+           <!--popup's close button-->
+            <!-- <button class="close">Close</button> -->
+            </div>  
+            
+            <div class="fixed-actions">
+              <div class="mark-complete">
+                Mark In POS
+              </div>
+            </div>
+        </div>
+        </div>
 
 </div>
+
+
+    
 
 
 </div>
@@ -85,6 +194,14 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
+    $(".open").on("click", function(){
+      $(this).addClass('tapped');
+    $(".popup-overlay, .popup-content").addClass("active"), 5000;
+    });
+    
+    $(".close, .popup").on("click", function(){
+    $(".popup-overlay, .popup-content").removeClass("active");
+  });
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
