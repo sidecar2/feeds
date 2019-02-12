@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Expo-Feed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Completed" transform="translate(-70.000000, -50.000000)" fill="#FFFFFF">
+            <g id="Group-6" transform="translate(71.000000, 51.000000)">
+                <circle id="Oval" stroke-opacity="0.15" stroke="#FFFFFF" fill-opacity="0.096255" cx="27" cy="27" r="27.5"></circle>
+                <g id="pan" transform="translate(17.000000, 15.000000)">
+                    <rect id="Rectangle" x="7.87878788" y="0" width="2.42424242" height="5.45454545" rx="1.21212121"></rect>
+                    <rect id="Rectangle" x="1.81818182" y="3.03030303" width="2.42424242" height="5.45454545" rx="1.21212121"></rect>
+                    <rect id="Rectangle" x="13.3333333" y="3.03030303" width="2.42424242" height="5.45454545" rx="1.21212121"></rect>
+                    <path d="M21.5909091,11.5151515 L1.43939394,11.5151515 C0.644438618,11.5151515 9.7353949e-17,12.1482842 0,12.9292929 L0,15.7575758 C2.92061847e-16,18.100602 1.93331585,20 4.31818182,20 L14.3939394,20 C16.7788054,20 18.7121212,18.100602 18.7121212,15.7575758 L18.7121212,14.3434343 L21.5909091,14.3434343 C22.3858644,14.3434343 23.030303,13.7103017 23.030303,12.9292929 C23.030303,12.1482842 22.3858644,11.5151515 21.5909091,11.5151515 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
