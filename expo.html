@@ -52,15 +52,15 @@
         <li>Items</li>
       </ul>
     </div>
-    <ul class="order open">
-        <li class="forty"> 
+    <ul class="order">
+        <li class="forty open"> 
           <img src="./img/postmates.png" class="order-photo">
           <div class="order-info">
             <p class="order-info"> Tanya</p>
             <p class="sub-text"> Postmates 438 · Delivery Order </p>
           </div>  
         </li>
-        <li class="customer-name">
+        <li class="customer-name open">
             1 Item 
             <p class="sub-text"> Fried Clam Hoagie</p>
         </li>
@@ -71,15 +71,15 @@
           <img src="img/more.svg" class="open">
         </li>
       </ul>
-      <ul class="order open">
-          <li class="forty"> 
+      <ul class="order">
+          <li class="forty open"> 
             <img src="./img/grubhub.png" class="order-photo">
             <div class="order-info">
               <p class="order-info"> Martha </p>
               <p class="sub-text"> GrubHub 4394294 · Delivery Order</p>
             </div>  
           </li>
-          <li class="customer-name">
+          <li class="customer-name open">
               2 Items 
               <p class="sub-text"> 1× Club Sandwich, 1x Lg Fries</p>
           </li>
@@ -90,8 +90,8 @@
             <img src="img/more.svg" class="open">
           </li>
         </ul>
-        <ul class="order open">
-            <li class="forty"> 
+        <ul class="order">
+            <li class="forty open"> 
               <img src="./img/chownow.png" class="order-photo">
               <div class="order-info">
                 <p class="order-info"> Jason</p>
@@ -99,7 +99,7 @@
                
               </div>  
             </li>
-            <li class="customer-name">
+            <li class="customer-name open">
                 3 Items 
                 <p class="sub-text"> 1× Club Sandwich, 1× Grilled Cheese Sandwich ... </p>
             </li>
@@ -110,15 +110,15 @@
               <img src="img/more.svg" class="open">
             </li>
           </ul>
-          <ul class="order open">
-              <li class="forty"> 
+          <ul class="order">
+              <li class="forty open"> 
                 <img src="./img/caviar.png" class="order-photo">
                 <div class="order-info">
                   <p class="order-info"> Trevor</p>
                   <p class="sub-text"> Caviar 4239 · Delivery Order</p>
                 </div>  
               </li>
-              <li class="customer-name">
+              <li class="customer-name open">
                   2 Items 
                   <p class="sub-text"> 1× Cheese & Turkey Pepperoni, 1x Lg Sprite</p>
               </li>
@@ -202,6 +202,8 @@
         </div>
         </div>
 
+        <div class="toast"><img src="./img/check.svg">Order Marked Cooked</div>
+
 </div>
 
 
@@ -217,6 +219,16 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
+
+    $(".complete").on("click", function(){
+        var fullOrder = $(this).closest('ul')
+      $(fullOrder).fadeOut('fast');
+      $(".toast").toggleClass('order-completed');
+      window.setTimeout(function() {
+        $(".toast").toggleClass('order-completed');
+    }, '2500');
+    });
+    
     $(".open").on("click", function(){
       $(this).addClass('tapped');
     $(".popup-overlay, .popup-content").addClass("active"), 5000;
@@ -225,6 +237,9 @@
     $(".close, .popup").on("click", function(){
     $(".popup-overlay, .popup-content").removeClass("active");
   });
+
+
+
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>

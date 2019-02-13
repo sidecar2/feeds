@@ -33,7 +33,9 @@ body.expo.purple button.complete {
     color: #45429A;
 }
 
-
+body.expo.master {
+    background: #29234A;
+}
 .content-wrapper {
     margin: 0 auto;
     width: 92%;
@@ -313,6 +315,24 @@ p.modifier-name {
 }
 .order-note img {
     margin-right: 8px;
+}
+
+.toast {
+    background: #21D1AB;
+    color: #fff;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    visibility:hidden;
+}
+.toast img {
+    margin-right: 6px;
+}
+.toast.order-completed {
+    visibility:visible;
 }
 @font-face {
     font-family: 'Apercu Pro';

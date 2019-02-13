@@ -16,17 +16,17 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="expo dark">
+<body class="expo master">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 <div class="content-wrapper">
   <div class="feeds-title">
     <div class="feed-heading">
-      <img class="feed-icon" src="./img/Handoff-icon.svg">
+      <img class="feed-icon" src="./img/expo.svg">
       <div class="feeds-header">
-        <h2>Driver Hand-Off Feed</h2>
-        <h6 class="helper"> Mark orders as completed as they get handed off to drivers</h6>
+        <h2>Master Feed</h2>
+        <h6 class="helper"> Mark orders cooked as they leave the kitchen</h6>
       </div>
     </div>
  
@@ -36,10 +36,10 @@
         <span>
           3
         </span>
-        Cooked
+        Incoming
       </li>
       <li>
-        Handed-Off
+        Cooked
       </li>
     </ul>
   </div>
@@ -49,19 +49,20 @@
     <div class="heading">
       <ul class="table-heading">
         <li class="forty"> Order Info</li>
-        <li>Customer Name</li>
+        <li>Items</li>
       </ul>
     </div>
     <ul class="order">
         <li class="forty open"> 
-          <img src="./img/rebecca.png" class="order-photo">
+          <img src="./img/postmates.png" class="order-photo">
           <div class="order-info">
-            <p class="sub-text"> Rebecca</p>
-            <p class="order-info"> Postmates 321 · Delivery Order</p>
+            <p class="order-info"> Tanya</p>
+            <p class="sub-text"> Postmates 438 · Delivery Order </p>
           </div>  
         </li>
         <li class="customer-name open">
-            Tony 
+            1 Item 
+            <p class="sub-text"> Fried Clam Hoagie</p>
         </li>
         <li class="order-actions">
           <button class="complete">
@@ -70,16 +71,17 @@
           <img src="img/more.svg" class="open">
         </li>
       </ul>
-      <ul class="order">
-          <li class="forty open"> 
-            <img src="./img/samantha.png" class="order-photo">
+      <ul class="order open">
+          <li class="forty"> 
+            <img src="./img/grubhub.png" class="order-photo">
             <div class="order-info">
-              <p class="sub-text"> Samantha</p>
-              <p class="order-info"> UberEats 321 · Delivery Order </p>
+              <p class="order-info"> Martha </p>
+              <p class="sub-text"> GrubHub 4394294 · Delivery Order</p>
             </div>  
           </li>
-          <li class="customer-name open">
-              Elizabeth 
+          <li class="customer-name">
+              2 Items 
+              <p class="sub-text"> 1× Club Sandwich, 1x Lg Fries</p>
           </li>
           <li class="order-actions">
             <button class="complete">
@@ -88,16 +90,18 @@
             <img src="img/more.svg" class="open">
           </li>
         </ul>
-        <ul class="order">
-            <li class="forty open"> 
-              <img src="./img/jason.png" class="order-photo">
+        <ul class="order open">
+            <li class="forty"> 
+              <img src="./img/chownow.png" class="order-photo">
               <div class="order-info">
-                <p class="sub-text"> Jason</p>
-                <p class="order-info"> Caviar 3820 · Delivery Order</p>
+                <p class="order-info"> Jason</p>
+                <p class="sub-text"> ChowNow 4382 · Customer Pickup</p>
+               
               </div>  
             </li>
-            <li class="customer-name open">
-                Angelica 
+            <li class="customer-name">
+                3 Items 
+                <p class="sub-text"> 1× Club Sandwich, 1× Grilled Cheese Sandwich ... </p>
             </li>
             <li class="order-actions">
               <button class="complete">
@@ -106,16 +110,17 @@
               <img src="img/more.svg" class="open">
             </li>
           </ul>
-          <ul class="order">
-              <li class="forty open"> 
+          <ul class="order open">
+              <li class="forty"> 
                 <img src="./img/caviar.png" class="order-photo">
                 <div class="order-info">
-                  <p class="sub-text"> Customer Pickup</p>
-                  <p class="order-info"> Caviar 1427 · Customer Pickup</p>
+                  <p class="order-info"> Trevor</p>
+                  <p class="sub-text"> Caviar 4239 · Delivery Order</p>
                 </div>  
               </li>
-              <li class="customer-name open">
-                  Bahman 
+              <li class="customer-name">
+                  2 Items 
+                  <p class="sub-text"> 1× Cheese & Turkey Pepperoni, 1x Lg Sprite</p>
               </li>
               <li class="order-actions">
                 <button class="complete">
@@ -196,7 +201,8 @@
             </div>
         </div>
         </div>
-        <div class="toast"><img src="./img/check.svg">Order Marked Handed-Off</div>
+
+        <div class="toast"><img src="./img/check.svg">Order Marked Cooked</div>
 
 </div>
 
@@ -213,15 +219,13 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    $(".complete").on("click", function(){
-        var fullOrder = $(this).closest('ul')
-      $(fullOrder).fadeOut('fast');
-      $(".toast").toggleClass('order-completed');
-      window.setTimeout(function() {
-        $(".toast").toggleClass('order-completed');
-    }, '2500');
+
+    $("button.complete").on("click", function(){
+    $(".toast").addClass("order-completed"), 5000;
+    $(".popup-overlay, .popup-content").removeClass("active");
     });
-    
+
+
     $(".open").on("click", function(){
       $(this).addClass('tapped');
     $(".popup-overlay, .popup-content").addClass("active"), 5000;
@@ -230,6 +234,11 @@
     $(".close, .popup").on("click", function(){
     $(".popup-overlay, .popup-content").removeClass("active");
   });
+
+
+    
+   
+
 
 
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
