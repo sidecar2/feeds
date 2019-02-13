@@ -160,10 +160,12 @@ body.expo.master {
     padding: 0 4px;
 }
 .order-container.master.order-ready ul.order {
-    box-shadow: 2px 0px 0px 0px inset #21D1AB;
+    -webkit-box-shadow: inset 2px 0px 0px 0px  #21D1AB;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: inset 2px 0px 0px 0px  #21D1AB;
+    box-shadow: inset 2px 0px 0px 0px  #21D1AB;
 }
 .order-container.master.order-cooking ul.order {
-    box-shadow: 2px 0px 0px 0px inset #F5A623;
+    box-shadow: inset 2px 0px 0px 0px  #F5A623;
 }
 .order-container.master.order-cooking {
     margin-right: 1%;
