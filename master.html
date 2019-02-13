@@ -17,13 +17,13 @@
 </head>
 
 <body class="expo master">
+    <div class="dotted-bg">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 <div class="content-wrapper">
   <div class="feeds-title">
     <div class="feed-heading">
-      <img class="feed-icon" src="./img/expo.svg">
       <div class="feeds-header">
         <h2>Master Feed</h2>
         <h6 class="helper"> Mark orders cooked as they leave the kitchen</h6>
@@ -44,31 +44,29 @@
     </ul>
   </div>
 </div>
-
-  <div class="order-container">
+<div class="order-body">
+  <div class="order-container master  order-cooking">
     <div class="heading">
-      <ul class="table-heading">
-        <li class="forty"> Order Info</li>
-        <li>Items</li>
-      </ul>
+      <p class="t-heading">
+        <img src="./img/order-cooking.svg"> 3 Items Cooking
+      </p>
     </div>
     <ul class="order">
         <li class="forty open"> 
           <img src="./img/postmates.png" class="order-photo">
           <div class="order-info">
-            <p class="order-info"> Tanya</p>
             <p class="sub-text"> Postmates 438 · Delivery Order </p>
+            <p class="order-info"> 3 Items</p>
+           
           </div>  
         </li>
         <li class="customer-name open">
-            1 Item 
-            <p class="sub-text"> Fried Clam Hoagie</p>
+            Alexander
         </li>
         <li class="order-actions">
-          <button class="complete">
-            Mark Handed-Off
-          </button>
-          <img src="img/more.svg" class="open">
+                3 
+                <br>
+                Mins
         </li>
       </ul>
       <ul class="order open">
@@ -81,13 +79,11 @@
           </li>
           <li class="customer-name">
               2 Items 
-              <p class="sub-text"> 1× Club Sandwich, 1x Lg Fries</p>
           </li>
           <li class="order-actions">
-            <button class="complete">
-              Mark Handed-Off
-            </button>
-            <img src="img/more.svg" class="open">
+                5 
+                <br>
+                Mins
           </li>
         </ul>
         <ul class="order open">
@@ -101,36 +97,88 @@
             </li>
             <li class="customer-name">
                 3 Items 
-                <p class="sub-text"> 1× Club Sandwich, 1× Grilled Cheese Sandwich ... </p>
             </li>
             <li class="order-actions">
-              <button class="complete">
-                Mark Handed-Off
-              </button>
-              <img src="img/more.svg" class="open">
+                    7 <br> Mins
             </li>
           </ul>
-          <ul class="order open">
-              <li class="forty"> 
-                <img src="./img/caviar.png" class="order-photo">
-                <div class="order-info">
-                  <p class="order-info"> Trevor</p>
-                  <p class="sub-text"> Caviar 4239 · Delivery Order</p>
-                </div>  
-              </li>
-              <li class="customer-name">
-                  2 Items 
-                  <p class="sub-text"> 1× Cheese & Turkey Pepperoni, 1x Lg Sprite</p>
-              </li>
-              <li class="order-actions">
-                <button class="complete">
-                  Mark Handed-Off
-                </button>
-                <img src="img/more.svg" class="open">
-              </li>
-            </ul>
     </div>
-  </div>
+
+
+    <div class="order-container master order-ready">
+            <div class="heading">
+                <p class="t-heading">
+                        <img src="./img/order-ready.svg"> 4 Items Ready For Hand-Off
+                </p>
+            </div>
+            <ul class="order">
+                <li class="forty open"> 
+                <img src="./img/postmates.png" class="order-photo">
+                <div class="order-info">
+                    <p class="order-info"> Tanya</p>
+                    <p class="sub-text"> Postmates 438 · Delivery Order </p>
+                </div>  
+                </li>
+                <li class="customer-name open">
+                    1 Item 
+                </li>
+                <li class="order-actions">
+                        5 <br>Mins
+                </li>
+            </ul>
+            <ul class="order open">
+                <li class="forty"> 
+                    <img src="./img/grubhub.png" class="order-photo">
+                    <div class="order-info">
+                    <p class="order-info"> Martha </p>
+                    <p class="sub-text"> GrubHub 4394294 · Delivery Order</p>
+                    </div>  
+                </li>
+                <li class="customer-name">
+                    2 Items 
+                </li>
+                <li class="order-actions">
+                        9 <br>Mins
+                </li>
+                </ul>
+                <ul class="order open">
+                    <li class="forty"> 
+                    <img src="./img/chownow.png" class="order-photo">
+                    <div class="order-info">
+                        <p class="order-info"> Jason</p>
+                        <p class="sub-text"> ChowNow 4382 · Customer Pickup</p>
+                    
+                    </div>  
+                    </li>
+                    <li class="customer-name">
+                        3 Items 
+                    </li>
+                    <li class="order-actions">
+                            13 <br>Mins
+                    </li>
+                </ul>
+                <ul class="order open">
+                    <li class="forty"> 
+                        <img src="./img/caviar.png" class="order-photo">
+                        <div class="order-info">
+                        <p class="order-info"> Trevor</p>
+                        <p class="sub-text"> Caviar 4239 · Delivery Order</p>
+                        </div>  
+                    </li>
+                    <li class="customer-name">
+                        2 Items 
+                    
+                    </li>
+                    <li class="order-actions">
+                            16 <br>Mins
+                    </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+         <!-- Close Order Body -->
+
+
     <!-- Add your site or application content here -->
     <div class="popup-overlay">
         <!--Creates the popup content-->
@@ -210,6 +258,7 @@
     
 
 
+</div>
 </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

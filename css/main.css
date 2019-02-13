@@ -33,9 +33,7 @@ body.expo.purple button.complete {
     color: #45429A;
 }
 
-body.expo.master {
-    background: #29234A;
-}
+
 .content-wrapper {
     margin: 0 auto;
     width: 92%;
@@ -91,28 +89,112 @@ ul.order-status li.active {
 } */
 ul.order-status li span {
     display: inline-block;
+    font-size: 13px;
     width: 24px;
     height: 24px;
     border-radius: 12px; 
     color: #fff;
     background: #21D1AB;
     text-align: center;
-    line-height: 24px;
+    line-height: 26px;
     margin-right: 4px;
 }
 .order-container {
-    background: rgba(49,51,86,0.40);
+    background: rgba(53, 47, 84, 0.7);
     margin: 16px 0;
     border-radius: 4px;
     border: 1px solid rgba(255,255,255,.05);
 }
+
+/* MASTER FEED OVERRIDES  */
+
+body.expo.master {
+    background: #29234A;
+}
+.dotted-bg {
+        background-image: url('../img/dots.svg');
+        background-repeat: repeat;
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+}
+
+.order-container.master {
+    width: 49%;
+    display: inline-flex;
+    flex-direction: column;
+    border: none; 
+}
+
+.order-body {
+    justify-content: space-between;
+}
+.order-container.master ul.order li.forty {
+    display: inline-flex;
+    width: 56%;
+}
+
+.order-container.master ul.order li.customer-name {
+    display: inline-flex;
+    width: 24%;
+}
+
+.order-container.master ul.order li.order-actions {
+    width: 15%;
+}
+
+.order-container.master ul.order {
+    padding: 0 7px;
+    margin-bottom: 4px;
+    background: #3B345B;
+    border: none;
+}
+
+.order-container.master ul.order li img.order-photo {
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+.order-container.master.order-ready ul.order {
+    box-shadow: 2px 0px 0px 0px inset #21D1AB;
+}
+.order-container.master.order-cooking ul.order {
+    box-shadow: 2px 0px 0px 0px inset #F5A623;
+}
+.order-container.master.order-cooking {
+    margin-right: 1%;
+} 
+.t-heading {
+    padding: 6px 12px;
+    font-size: 20px;
+}
+.t-heading img {
+    padding-right: 8px;
+}
+
+.order-container.master .heading {
+    border: none;
+}
+
+.order-container.master ul.order li.order-actions {
+    text-align: center;
+    opacity: .65;
+    font-size: 14px;
+}
+/* END MASTER FEED OVERRIDES  */
 .heading {
     width: 100%;
     border-bottom: 1px solid rgba(255,255,255,0.10);
 }
+
+
 img.order-photo {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
     box-shadow: 0px 3px 10px rgba(30, 31, 49, 0.2);
     border-radius: 8px;
 }
@@ -138,6 +220,7 @@ ul.order.tapped {
     animation-timing-function: ease;
 
 }
+
 @keyframes newOrder {
     0% {
   background-color: #D9F7F0;
