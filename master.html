@@ -78,7 +78,7 @@
                 <span class="dets">Order Details</span>
             </li>
             <li class="order-actions mark-order-complete">
-                    <span class="mark-cooked"> Mark Cooked</span>
+                    <span class="mark-cooked orange"> Mark Cooked</span>
             </li>
         </ul>
     </div>
@@ -109,7 +109,7 @@
                     <span class="dets">Order Details</span>
                 </li>
                 <li class="order-actions mark-order-complete">
-                        <span class="mark-cooked"> Mark Cooked</span>
+                        <span class="mark-cooked orange"> Mark Cooked</span>
                 </li>
             </ul>
         </div>
@@ -139,7 +139,7 @@
                     <span class="dets">Order Details</span>
                 </li>
                 <li class="order-actions mark-order-complete">
-                      <span class="mark-cooked"> Mark Cooked</span>
+                      <span class="mark-cooked orange"> Mark Cooked</span>
                 </li>
             </ul>
         </div>
@@ -176,7 +176,7 @@
                         <span class="dets">Order Details</span>
                     </li>
                     <li class="order-actions mark-order-complete">
-                            <span class="mark-cooked"> Mark Cooked</span>
+                            <span class="mark-cooked"> Handed-Off</span>
                     </li>
                 </ul>
             </div>
@@ -205,7 +205,7 @@
                             <span class="dets">Order Details</span>
                         </li>
                         <li class="order-actions mark-order-complete">
-                                <span class="mark-cooked"> Mark Cooked</span>
+                                <span class="mark-cooked"> Handed-Off</span>
                         </li>
                     </ul>
             </div>
@@ -234,7 +234,7 @@
                         <span class="dets">Order Details</span>
                     </li>
                     <li class="order-actions mark-order-complete">
-                            <span class="mark-cooked"> Mark Cooked</span>
+                            <span class="mark-cooked"> Handed-Off</span>
                     </li>
                 </ul>
             </div>
@@ -262,8 +262,8 @@
                     <li class="customer-name open">
                         <span class="dets">Order Details</span>
                     </li>
-                    <li class="order-actions mark-order-complete">
-                            <span class="mark-cooked"> Mark Cooked</span>
+                    <li class="order-actions order-handed">
+                            <span class="mark-cooked"> Handed-Off</span>
                     </li>
                 </ul>
 
@@ -338,7 +338,7 @@
             </div>  
             
             <div class="fixed-actions">
-              <div class="mark-complete">
+              <div class="mark-complete master-feed">
                 Mark In POS
               </div>
             </div>
@@ -346,13 +346,12 @@
         </div>
 
         <div class="toast"><img src="./img/check.svg">Order Marked Cooked</div>
+        <div class="toast order-handed-off"><img src="./img/check.svg">Order Has Been Handed-Off!</div>
 
 </div>
 
 
     
-
-
 </div>
 </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -396,6 +395,17 @@
         $(this).parent().siblings("ul.state-change").toggleClass("state-changed");
         $(this).parent().siblings("ul.state-change").addClass("tapped");
     });
+
+
+    $(".order-handed").on("click", function(){
+        $(this).parents('.master-order').detach();
+        $(".toast.order-handed-off").toggleClass('order-completed');
+      window.setTimeout(function() {
+        $(".toast.order-handed-off").toggleClass('order-completed');
+    }, '2500');
+        
+    });
+
 
 
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

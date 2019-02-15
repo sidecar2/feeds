@@ -236,6 +236,9 @@ span.mark-cooked {
     background: #21D1AB;
     color: #313356;
 }
+span.mark-cooked.orange {
+    background: #F5A623;
+}
 /* ul.master-order-actions li.customer-name {
     
 }
