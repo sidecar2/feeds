@@ -114,7 +114,7 @@ body.expo.master {
 .dotted-bg {
         background-image: url('../img/dots.svg');
         background-repeat: repeat;
-        top: 10px;
+        top: 0px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -238,6 +238,10 @@ span.mark-cooked {
 }
 span.mark-cooked.orange {
     background: #F5A623;
+}
+
+body.expo.master ul.order-status li span {
+    color: #313356
 }
 /* ul.master-order-actions li.customer-name {
     
