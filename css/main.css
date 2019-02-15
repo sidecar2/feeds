@@ -139,11 +139,11 @@ body.expo.master {
 
 .order-container.master ul.order li.customer-name {
     display: inline-flex;
-    width: 24%;
+    width: 29%;
 }
 
 .order-container.master ul.order li.order-actions {
-    width: 15%;
+    width: 10%;
 }
 
 .order-container.master ul.order {
@@ -158,6 +158,7 @@ body.expo.master {
     height: 34px;
     border-radius: 4px;
     padding: 0 4px;
+    margin-top: 9px;
 }
 .order-container.master.order-ready ul.order {
     -webkit-box-shadow: inset 2px 0px 0px 0px  #21D1AB;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -172,7 +173,7 @@ body.expo.master {
 } 
 .t-heading {
     padding: 6px 12px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .t-heading img {
     padding-right: 8px;
@@ -187,6 +188,60 @@ body.expo.master {
     opacity: .65;
     font-size: 14px;
 }
+
+.master-order {
+    position: relative;
+}
+        /* toggle  */
+.master-order-actions {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+}
+ul.master-order-actions li {
+    display: inline-block;
+    padding: 6px 20px 0 0; 
+    text-indent: 0;
+}
+ul.master-order-actions li.esc {
+    float: left;
+    margin-left: 30px;
+}
+
+ul.master-order-actions li span {
+    padding: 20px 25px;
+    border-radius: 0;
+    line-height: 18px;
+    font-size: 18px;
+}
+.master-order-actions.state-changed {
+    visibility: visible;
+    padding: 10px;
+    text-align: right;
+    width: 96%;
+}
+ul.order.state-changed {
+    visibility: hidden;
+}
+span.dets {
+    background: rgba(255,255,255,0.1); 
+    color: #fff;
+    text-align: center;
+    padding: 8px 16px; 
+    margin: 6px 12px;
+    border-radius: 6px;
+    text-indent: 0;
+}
+span.mark-cooked {
+    background: #21D1AB;
+    color: #313356;
+}
+/* ul.master-order-actions li.customer-name {
+    
+}
+ul.master-order-actions li.order-actions {
+    float: right;
+} */
 /* END MASTER FEED OVERRIDES  */
 .heading {
     width: 100%;
@@ -217,7 +272,7 @@ ul.order {
 
 ul.order.tapped {
     animation-name: newOrder;
-    animation-duration: 1000ms;
+    animation-duration: 1200ms;
     animation-iteration-count: 1;
     animation-timing-function: ease;
 
@@ -225,11 +280,11 @@ ul.order.tapped {
 
 @keyframes newOrder {
     0% {
-  background-color: #D9F7F0;
+  background-color:rgba(33,209,171,0.25);
       opacity: 1;
     }
     100% {
-      background-color: inherit;
+      background-color: #3B345B;
     }
   }
 
@@ -395,7 +450,7 @@ p.modifier-name {
     color: #fff;   
     display: inline-block;
     border-radius: 8px;
-    padding: 16px 64px;
+    padding: 16px 80px;
     font-size: 20px;
 }
 .order-note img {
