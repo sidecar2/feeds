@@ -456,6 +456,11 @@ p.modifier-name {
     padding: 16px 80px;
     font-size: 20px;
 }
+.mark-complete.master-feed{
+    background: #21D1AB;
+    color: #313356;
+    border-radius: 0;
+}
 .order-note img {
     margin-right: 8px;
 }
