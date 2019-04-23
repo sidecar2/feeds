@@ -737,11 +737,11 @@ body.facility .order-container.master  ul.order li.order-actions {
 
 .master-order.state-changed  .order {
     animation-name: advancedOrder;
-    animation-duration: 3000ms;
+    animation-duration: 1500ms;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-play-state: running;
-    background-color: #fff: 
+    background-color: #fff; 
 
 }
 

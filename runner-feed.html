@@ -17,6 +17,9 @@
 </head>
 
 <body class="facility master">
+        <audio id="notification" preload="auto">
+                <source src="./img/feeds-chime-amped.wav"> </source>
+            </audio>
  
     <div class="dotted-bg">
             <div class="exandable-header">
@@ -669,9 +672,8 @@
    $(document).on('keypress',function(e) {
     if(e.which == 13) {
         $('.master.order-cooking').children('div.master-order:first').detach().appendTo('.master.order-ready').toggleClass('state-changed');
+        $('#notification').trigger('play');
       
-         $(this).parent().siblings("ul.state-change").toggleClass("state-changed");
-         $(this).parent().siblings("ul.state-change").addClass("tapped");
     }
 });
 
