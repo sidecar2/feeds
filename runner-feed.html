@@ -16,31 +16,23 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class="expo master">
+<body class="facility master">
+ 
     <div class="dotted-bg">
+            <div class="exandable-header">
+                <h2>1842 Washington Blvd · <span>Runner Feed</span></h2>
+                <p class="hide-header">Hide</p>
+            </div>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 <div class="content-wrapper">
-  <div class="feeds-title">
+  
     <div class="feed-heading">
-      <div class="feeds-header">
-        <h2>Master Feed</h2>
-        <h6 class="helper"> Mark orders cooked as they leave the kitchen</h6>
-      </div>
-    </div>
  
   <div class="toggle">
     <ul class="order-status">
-      <li class="tab-link active" data-tab="tab-1">
-        <span>
-          3
-        </span>
-        In Flight Orders
-      </li>
-      <li class="tab-link" data-tab="tab-2">
-        Handed-Off Orders
-      </li>
+      
     </ul>
   </div>
 </div>
@@ -49,7 +41,7 @@
     <div class="order-container master order-cooking">
         <div class="heading">
         <p class="t-heading">
-            <img src="./img/order-cooking.svg"> 3 Items Cooking
+            <img src="./img/cooking-runner.svg"> Waiting For Runner
         </p>
         </div>
         <div class="master-order">
@@ -57,8 +49,9 @@
                 <li class="forty"> 
                 <img src="./img/postmates.png" class="order-photo">
                 <div class="order-info">
-                    <p class="sub-text"> Postmates · Delivery Order </p>
-                    <p class="order-info"> 3 Items</p>
+                   
+                    <p class="order-info"> Kitchen 42</p>
+                    <p class="sub-text"> Postmates: 42382 </p>
                 
                 </div>  
                 </li>
@@ -67,7 +60,6 @@
                 </li>
                 <li class="order-actions">
                         3 
-                        <br>
                         Mins
                 </li>
             </ul>
@@ -88,8 +80,9 @@
             <li class="forty"> 
                 <img src="./img/grubhub.png" class="order-photo">
                 <div class="order-info">
-                <p class="sub-text"> GrubHub · Delivery Order</p>
-                <p class="order-info"> 2 Items </p>
+                    <p class="order-info"> Kitchen 22 </p>
+                    <p class="sub-text"> GrubHub: 994</p>
+                
                 
                 </div>  
             </li>
@@ -98,7 +91,6 @@
             </li>
             <li class="order-actions">
                     5 
-                    <br>
                     Mins
             </li>
             </ul>
@@ -119,8 +111,9 @@
                 <li class="forty"> 
                 <img src="./img/chownow.png" class="order-photo">
                 <div class="order-info">
-                    <p class="sub-text"> ChowNow · <span class="customer-pickup">Customer Pickup</span></p>
-                    <p class="order-info"> 7 Items</p>
+                        <p class="order-info"> Storage 12</p>
+                    <p class="sub-text"> ChowNow: 4384</p>
+                   
                     
                 
                 </div>  
@@ -129,7 +122,7 @@
                     Samantha 
                 </li>
                 <li class="order-actions">
-                        7 <br> Mins
+                        7 Mins
                 </li>
             </ul>
             <ul class="master-order-actions">
@@ -147,9 +140,10 @@
         </div>
 
             <div class="order-container master order-ready">
+                <img class="show-header" src="./img/show-header.svg">
                 <div class="heading">
                     <p class="t-heading">
-                            <img src="./img/order-ready.svg"> 4 Items Ready For Hand-Off
+                            <img src="./img/checked-in.svg"> Runner Picked Up
                     </p>
                 </div>
                 <div class="master-order">
@@ -157,8 +151,9 @@
                         <li class="forty"> 
                         <img src="./img/ubereats.png" class="order-photo">
                         <div class="order-info">
-                            <p class="sub-text"> UberEats · Delivery </p>
-                            <p class="order-info"> 4 Items</p>
+                             <p class="order-info"> Storage 12</p>
+                            <p class="sub-text"> UberEats: 3427 </p>
+                           
                         
                         </div>  
                         </li>
@@ -166,7 +161,7 @@
                         Rosemary 
                         </li>
                         <li class="order-actions">
-                                7 <br> Mins
+                                7 Mins
                         </li>
                     </ul>
                     <ul class="master-order-actions">
@@ -187,15 +182,16 @@
                         <li class="forty"> 
                             <img src="./img/grubhub.png" class="order-photo">
                             <div class="order-info">
-                                <p class="sub-text"> GrubHub 4394294 · Delivery Order</p>
-                                <p class="order-info"> 4 Items </p>
+                                <p class="order-info"> Kitchen 13 </p>
+                                <p class="sub-text"> GrubHub: 3427 </p>
+                                
                             </div>  
                         </li>
                         <li class="customer-name">
                             Juliana 
                         </li>
                         <li class="order-actions">
-                                9 <br>Mins
+                                9 Mins
                         </li>
                     </ul>
                     <ul class="master-order-actions">
@@ -215,8 +211,9 @@
                         <li class="forty"> 
                             <img src="./img/amazon.png" class="order-photo">
                             <div class="order-info">
-                                <p class="sub-text"> Amazon 4382 · Customer Pickup</p>
-                                <p class="order-info"> 5 Items</p>
+                                
+                                <p class="order-info"> Storage 23</p>
+                                <p class="sub-text"> Amazon: 4382 </p>
                             
                             </div>  
                         </li>
@@ -224,7 +221,7 @@
                             Jason  
                         </li>
                         <li class="order-actions">
-                                13 <br>Mins
+                                13 Mins
                         </li>
                     </ul>
                     <ul class="master-order-actions">
@@ -244,8 +241,9 @@
                         <li class="forty"> 
                             <img src="./img/caviar.png" class="order-photo">
                             <div class="order-info">
-                            <p class="sub-text"> Caviar 4239 · Delivery Order</p>
-                            <p class="order-info"> 3 Items</p>
+                                <p class="order-info"> Kitchen 14</p>
+                                <p class="sub-text"> Caviar: 3244 </p>
+                            
                             </div>  
                         </li>
                         <li class="customer-name">
@@ -253,7 +251,7 @@
                         
                         </li>
                         <li class="order-actions">
-                                16 <br>Mins
+                                16 Mins
                         </li>
                     </ul>
                     <ul class="master-order-actions">
@@ -299,9 +297,7 @@
                                 3 
                                 <br>
                                 Mins
-                              
                         </li>
-                       
                     </ul>
                     <ul class="master-order-actions">
                         <li class="esc close-state-change"> 
@@ -485,7 +481,7 @@
                                 
                                 </li>
                                 <li class="order-actions">
-                                        16 <br>Mins
+                                        16 Mins
                                 </li>
                             </ul>
                             <ul class="master-order-actions">
@@ -653,8 +649,24 @@
       window.setTimeout(function() {
         $(".toast.order-handed-off").toggleClass('order-completed');
     }, '2500');
-        
+});
+
+    // Hide Header
+
+      $("p.hide-header").on("click", function(){  
+        $('.exandable-header').toggleClass('toggle-header');
+        $('body.facility').toggleClass('header-hidden');
     });
+
+     $("img.show-header").on("click", function(){  
+        $('.exandable-header').toggleClass('toggle-header');
+        $('body.facility').toggleClass('header-hidden');
+    });
+
+
+   
+        
+
 
 
 

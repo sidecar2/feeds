@@ -607,6 +607,150 @@ visibility:visible;
     -moz-transition: opacity 2.0s ease-in;
       -o-transition: opacity 2.0s ease-in;
 }
+
+
+
+
+
+
+/* Facility Feed Overrides  */
+body.facility {
+    background: #F6F7FB;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body.facility .order-container {
+    background: rgba(255,255,255,0.1);
+    color: #313356;
+}
+
+body.facility  .order-container.master ul.order {
+    background: #fff;
+    box-shadow: 0px 4px 9px rgba(218, 228, 242, 0.10);
+}
+
+body.facility .t-heading {
+    text-align: center;
+    font-weight: 600;
+}
+
+body.facility .order-container.master ul.order li img.order-photo {
+    padding: 0;
+    box-shadow: -1px 3px 10px rgba(30, 31, 49, 0.1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body.facility .order-info p {
+    font-weight: 600;
+    font-size: 16px;
+}
+body.facility p.sub-text  {
+    color: #8492A6;
+    font-size: 14px;
+    font-weight: 500;
+}
+body.facility .content-wrapper {
+    width: 96%;
+}
+.exandable-header {
+    color: #fff;
+    background: #252631;
+    padding: 6px 24px;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgba(49,51,86,.2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.exandable-header.toggle-header {
+display: none;
+}
+
+.exandable-header h2 {
+    font-size: 16px;
+    font-weight: 400;
+    }  
+.exandable-header h2 span {
+        font-weight: 700;
+} 
+
+body.facility .order-container.master {
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+img.show-header {
+    display: none;
+}
+body.header-hidden img.show-header {
+    position: absolute; 
+    right: 24px;
+    top: 16px;
+    display: inherit;
+}
+body.facility .master-order {
+    padding: 0 10px;
+}
+body.facility .content-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body.facility .order-container.master ul.order li.customer-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+body.facility .feed-heading {
+    display: none;
+}
+body.header-hidden .order-cooking .t-heading {
+    background: #EF9435;
+    color: #fff;
+    transition: linear all 100ms;
+}
+body.header-hidden .order-ready .t-heading {
+    background: #05A95D;
+    color: #fff;
+    transition: linear all 100ms;
+}
+body.facility .t-heading {
+    border-bottom: 1px solid rgba(218, 228, 242, 0.6);
+    padding: 20px;
+    margin: 0 0 16px 0;
+    font-weight: 700;
+    color: #252631;
+}
+
+body.facility .order-container.master  ul.order li.order-actions {
+    color: #8492A6;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(218, 228, 242, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+
+    
+}
+
+body.facility .order-container.order-cooking {
+    box-shadow: 1px 0 0 0 rgba(218, 228, 242, 0.6);
+    min-height: 1000px;
+}
+body.header-hidden .order-container {
+    margin: 0;
+}
+
+body.header-hidden .content-wrapper {
+    padding-top: 0;
+}
+
+body.header-hidden .feed-heading {
+    display: none;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
