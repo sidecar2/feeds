@@ -306,6 +306,7 @@ ul.order.tapped {
     }
   }
 
+ 
 
 
 ul.order::active, ul:hover {
@@ -732,9 +733,33 @@ body.facility .order-container.master  ul.order li.order-actions {
     background: rgba(218, 228, 242, 0.2);
     border-radius: 4px;
     padding: 8px;
-
-    
 }
+
+.master-order.state-changed  .order {
+    animation-name: advancedOrder;
+    animation-duration: 3000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    background-color: #fff: 
+
+}
+
+@keyframes advancedOrder {
+0% { 
+    background-color: #D9F7F0;
+     opacity: 1;
+    }
+    50% {
+        background-color: #D9F7F0;
+        opacity: 1;
+        }
+    100% {
+        background-color: #fff;
+        opacity: 1;
+        }
+    }
+
 
 body.facility .order-container.order-cooking {
     box-shadow: 1px 0 0 0 rgba(218, 228, 242, 0.6);

@@ -666,7 +666,14 @@
 
    
         
-
+   $(document).on('keypress',function(e) {
+    if(e.which == 13) {
+        $('.master.order-cooking').children('div.master-order:first').detach().appendTo('.master.order-ready').toggleClass('state-changed');
+      
+         $(this).parent().siblings("ul.state-change").toggleClass("state-changed");
+         $(this).parent().siblings("ul.state-change").addClass("tapped");
+    }
+});
 
 
 
