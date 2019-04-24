@@ -724,6 +724,7 @@ body.facility .t-heading {
     margin: 0 0 16px 0;
     font-weight: 700;
     color: #252631;
+    text-transform: uppercase;
 }
 
 body.facility .order-container.master  ul.order li.order-actions {
