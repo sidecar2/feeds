@@ -689,10 +689,10 @@ img.show-header {
 }
 body.header-hidden img.show-header {
     transform: rotate(180deg);
-    transition: ease-in all 100ms; 
+    transition: ease-in background-color 100ms; 
 }
 body.facility .master-order {
-    padding: 0 10px;
+    padding: 0 16px;
 }
 body.facility .content-wrapper {
     width: 100%;
@@ -714,7 +714,7 @@ body.header-hidden .order-cooking .t-heading {
     transition: linear all 50ms;
 }
 body.header-hidden .order-ready .t-heading {
-    background: #05A95D;
+    background: #20BC9A;
     color: #fff;
     transition: linear all 100ms;
 }

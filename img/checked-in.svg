@@ -1,6 +1,6 @@
 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="18" cy="18" r="18" fill="#05A95D" fill-opacity="0.08"/>
-<circle cx="18" cy="18" r="15" fill="#05A95D"/>
+<circle cx="18" cy="18" r="18" fill="#20BC9A" fill-opacity="0.15"/>
+<circle cx="18" cy="18" r="15" fill="#20BC9A" fill-opacity="0.9"/>
 <g clip-path="url(#clip0)">
 <path d="M24.8569 14.7001L24.2569 13.5001C19.0819 15.0001 16.4569 18.3001 16.4569 18.3001L14.0569 16.5001L12.8569 17.7001L16.4569 22.5001C19.2319 17.3251 24.8569 14.7001 24.8569 14.7001Z" fill="white"/>
 </g>
