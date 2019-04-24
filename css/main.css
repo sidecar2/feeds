@@ -683,13 +683,13 @@ body.facility .order-container.master {
 }
 
 img.show-header {
-    display: none;
-}
-body.header-hidden img.show-header {
     position: absolute; 
     right: 24px;
-    top: 16px;
-    display: inherit;
+    top: 12px;
+}
+body.header-hidden img.show-header {
+    transform: rotate(180deg);
+    transition: ease-in all 100ms; 
 }
 body.facility .master-order {
     padding: 0 10px;
@@ -711,7 +711,7 @@ body.facility .feed-heading {
 body.header-hidden .order-cooking .t-heading {
     background: #EF9435;
     color: #fff;
-    transition: linear all 100ms;
+    transition: linear all 50ms;
 }
 body.header-hidden .order-ready .t-heading {
     background: #05A95D;
