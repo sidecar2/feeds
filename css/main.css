@@ -689,10 +689,12 @@ img.show-header {
 }
 body.header-hidden img.show-header {
     transform: rotate(180deg);
-    transition: ease-in background-color 100ms; 
+    transition: ease-in all 100ms; 
 }
 body.facility .master-order {
-    padding: 0 16px;
+    width: 92%;
+    margin: 0 auto;
+    border-radius: 6px;
 }
 body.facility .content-wrapper {
     width: 100%;
@@ -711,12 +713,12 @@ body.facility .feed-heading {
 body.header-hidden .order-cooking .t-heading {
     background: #EF9435;
     color: #fff;
-    transition: linear all 50ms;
+    transition: ease-in background fast;
 }
 body.header-hidden .order-ready .t-heading {
     background: #20BC9A;
     color: #fff;
-    transition: linear all 100ms;
+    transition: ease-in background fast;
 }
 body.facility .t-heading {
     border-bottom: 1px solid rgba(218, 228, 242, 0.6);
