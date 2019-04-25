@@ -714,15 +714,17 @@ body.header-hidden .order-cooking .t-heading {
     background: #EF9435;
     color: #fff;
     transition: ease-in background fast;
+    border-bottom: none;
 }
 body.header-hidden .order-ready .t-heading {
     background: #20BC9A;
     color: #fff;
     transition: ease-in background fast;
+    border-bottom: none;
 }
 body.facility .t-heading {
     border-bottom: 1px solid rgba(218, 228, 242, 0.6);
-    padding: 20px;
+    padding: 18px;
     margin: 0 0 16px 0;
     font-weight: 700;
     color: #252631;
@@ -737,7 +739,34 @@ body.facility .order-container.master  ul.order li.order-actions {
     border-radius: 4px;
     padding: 8px;
 }
+.sub-orders {
+    padding-bottom: 6px;
+}
+.assembly-info {
+    padding: 0px;
+    margin: 2px auto;
+    font-size: 14px;
+    width: 98%;
+    border-radius: 2px;
+    border: 1px solid rgba(218, 228, 242, 0.30);
+    line-height: 8px;
+}
+.assembly-info span {
+    width: 8px;
+    height: 8px;
+    background: #20BC9A;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 8px;
+}
 
+.assembly-info li.bin {
+    color: #20BC9A;
+    text-align: right;
+    float: right;
+    padding-right: 8px;
+    
+}
 .master-order.state-changed  .order {
     animation-name: advancedOrder;
     animation-duration: 1500ms;
