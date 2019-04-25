@@ -526,15 +526,7 @@
     $(".popup-overlay, .popup-content").removeClass("active");
     });
 
-    $(".state-change").on("click", function(){  
-        $(this).toggleClass('state-changed');
-        $(this).siblings(".master-order-actions").toggleClass("state-changed");
-    });
 
-    $(".close-state-change").on("click", function(){  
-        $(this).closest('.master-order-actions').toggleClass('state-changed');
-        $(this).parent().siblings("ul.state-change").toggleClass("state-changed");
-    });
 
 
     $(".open").on("click", function(){
