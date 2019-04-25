@@ -545,6 +545,43 @@ p.modifier-name {
 }
 
 
+@font-face {
+    font-family: 'suisse_intlsemibold';
+    src: url('../fonts/suisseintl-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/suisseintl-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'suisse_intlmedium';
+    src: url('../fonts/suisseintl-medium-webfont.woff2') format('woff2'),
+         url('../fonts/suisseintl-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'suisse_intlblack';
+    src: url('../fonts/suisseintl-black-webfont.woff2') format('woff2'),
+         url('../fonts/suisseintl-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'suisse_intlregular';
+    src: url('../fonts/suisseintl-regular-webfont.woff2') format('woff2'),
+         url('../fonts/suisseintl-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 .popup-overlay {
     /*Hides pop-up when there is no "active" class*/
@@ -671,9 +708,11 @@ display: none;
 .exandable-header h2 {
     font-size: 16px;
     font-weight: 400;
+    font-family: 'suisse_intlregular';
     }  
 .exandable-header h2 span {
         font-weight: 700;
+        font-family: 'suisse_intlsemibold';
 } 
 
 body.facility .order-container.master {
@@ -751,6 +790,7 @@ body.facility .order-container.master  ul.order li.order-actions {
     border: 1px solid rgba(218, 228, 242, 0.30);
     line-height: 8px;
 }
+
 .assembly-info span {
     width: 8px;
     height: 8px;
@@ -760,11 +800,12 @@ body.facility .order-container.master  ul.order li.order-actions {
     margin-right: 8px;
 }
 
-.assembly-info li.bin {
+.sub-orders li.bin {
     color: #20BC9A;
     text-align: right;
     float: right;
     padding-right: 8px;
+    font-weight: 700;
     
 }
 .master-order.state-changed  .order {
@@ -777,6 +818,38 @@ body.facility .order-container.master  ul.order li.order-actions {
 
 }
 
+
+
+.driver-info {
+    padding: 0px;
+    margin: 0px auto;
+    font-size: 14px;
+    width: 96%;
+    border-radius: 2px;
+  
+}
+.driver-info ul.order li {
+    padding: 0;
+}
+p.driver-check {
+    padding: 8px 18px;
+    background: rgba(218, 228, 242, 0.2);
+    border-radius: 30px;
+    margin: 0;
+    font-size: 14px;
+    color: #8492A6;
+    margin-left: 32px;
+}
+p.driver-check span {
+    font-weight: 700;
+}
+
+p.driver-check.driver-arrived {
+    color: #252631;
+}
+p.driver-check img {
+    margin-right: 4px;
+}
 @keyframes advancedOrder {
 0% { 
     background-color: #D9F7F0;
