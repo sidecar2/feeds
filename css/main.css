@@ -783,6 +783,11 @@ body.facility .order-container.master  ul.order li.order-actions {
     border: 1px solid rgba(218, 228, 242, 0.2);
     font-size: 12px;
 }
+
+body.facility .order-container.master  ul.order li.order-actions.alert {
+    background: #E58F00;
+    color: #fff;
+}
 .sub-orders {
     padding-bottom: 6px;
 }
