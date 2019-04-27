@@ -18,15 +18,21 @@
 
 <body class="facility master">
         <audio id="notification" preload="auto">
-                <source src="./img/feeds-chime-amped.wav"> </source>
-            </audio>
- 
-    <div class="dotted-bg">
-            <div class="exandable-header">
-                <h2>1842 Washington Blvd · <span>Runner Feed</span></h2>
-                <p class="hide-header"></p>
-            </div>
-            <img class="show-header" src="./img/show-header.svg">
+             <source src="./img/feeds-chime-amped.wav"> </source>
+        </audio>
+
+        <div class="exandable-header">
+            <h2>1842 Washington Blvd · <span>Runner Feed</span></h2>
+            <p class="toggle-feeds"> 
+                <span class="light-bg active-bg"> 
+                    <img src="./img/day-mode.svg">Light
+                </span> 
+                <span class="dark-bg"> 
+                    <img src="./img/night-mode.svg">Dark
+                </span> 
+            </p>
+        </div>
+        <img class="show-header" src="./img/show-header.svg">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -145,7 +151,7 @@
             <div class="order-container master order-ready">
                 <div class="heading">
                     <p class="t-heading">
-                            <img src="./img/checked-in.svg"> Ready For Pickup
+                            <img src="./img/checked-in.svg"> Ready For Runner
                     </p>
                 </div>
                 <div class="master-order">
@@ -568,7 +574,6 @@
               </div>
             </div>
         </div>
-        </div>
 
         <div class="toast"><img src="./img/check.svg">Order Marked Cooked</div>
         <div class="toast order-handed-off"><img src="./img/check.svg">Order Has Been Handed-Off!</div>
@@ -603,6 +608,17 @@
     $(".close, .popup").on("click", function(){
     $(".popup-overlay, .popup-content").removeClass("active");
   });
+
+    $(".dark-bg").on("click", function(){
+        $('body').toggleClass('night-mode');
+        $(this).toggleClass('active-bg');
+        $('.light-bg').removeClass('active-bg');
+    });
+    $(".light-bg").on("click", function(){
+        $('body').toggleClass('night-mode');
+        $(this).toggleClass('active-bg');
+        $('.dark-bg').removeClass('active-bg');
+    });
 
     $(".mark-order-complete").on("click", function(){
         $(this).parents('.master-order').detach().appendTo('.master.order-ready');

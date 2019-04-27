@@ -658,7 +658,6 @@ body.facility {
 }
 
 body.facility .order-container {
-    background: rgba(255,255,255,0.1);
     color: #252631;
 }
 
@@ -748,6 +747,9 @@ body.facility .order-container.master ul.order li.customer-name {
     font-size: 18px;
 }
 
+body.facility  .order-container {
+    background: none;
+}
 body.facility .feed-heading {
     display: none;
 }
@@ -890,6 +892,77 @@ body.header-hidden .content-wrapper {
 
 body.header-hidden .feed-heading {
     display: none;
+}
+
+.toggle-feeds {
+    padding-right: 60px;
+    font-size: 12px;
+}
+.toggle-feeds span {
+    margin-left: 16px;
+    opacity: .3;
+}
+
+.toggle-feeds span.active-bg {
+opacity: 1;
+}
+.toggle-feeds img {
+    margin-right: 6px;
+}
+
+
+/* ==========================================================================
+   Nightmode overrides
+   ========================================================================== */
+
+body.facility.night-mode {
+   
+    background: linear-gradient(90deg, #22283F 50%, #074652 50%)
+}
+
+body.facility.night-mode .order-container.order-cooking {
+    box-shadow: none;
+}
+
+body.facility.night-mode .order-container.master ul.order {
+ background: none;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ box-shadow: none;
+ color: #fff;
+}
+
+body.facility.night-mode .t-heading {
+    border-bottom: none;
+    color: #fff;
+}
+
+body.facility.night-mode .order-container.master ul.order li.order-actions {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+body.facility.night-mode .order-container.master ul.order li.order-actions.alert {
+    background: #E58F00;
+    color: #fff;
+}
+body.header-hidden.night-mode .order-ready .t-heading {
+    background: none;
+}
+body.header-hidden.night-mode .order-ready .t-heading img {
+    display: block;
+    margin: 4px auto;
+}
+body.header-hidden.night-mode .order-cooking .t-heading {
+    background: none;
+}
+body.header-hidden.night-mode .order-cooking .t-heading img {
+    display: block;
+    margin: 4px auto;
+}
+
+body.facility.night-mode p.sub-text {
+    color: rgba(255,255,255,.7)
 }
 /* ==========================================================================
    Base styles: opinionated defaults
