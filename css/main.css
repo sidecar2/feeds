@@ -291,7 +291,7 @@ ul.order {
 ul.order.tapped {
     animation-name: newOrder;
     animation-duration: 1200ms;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
     animation-timing-function: ease;
 
 }
@@ -783,7 +783,7 @@ body.facility .order-container.master  ul.order li.order-actions {
     padding: 8px;
     font-weight: 600;
     border: 1px solid rgba(218, 228, 242, 0.2);
-    font-size: 15px;
+    font-size: 14px;
 }
 
 body.facility .order-container.master  ul.order li.order-actions.alert {
@@ -823,7 +823,7 @@ body.facility .order-container.master  ul.order li.order-actions.alert {
 .master-order.state-changed  .order {
     animation-name: advancedOrder;
     animation-duration: 1500ms;
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
     animation-timing-function: ease-in;
     animation-play-state: running;
     background-color: #fff; 
@@ -864,7 +864,7 @@ p.driver-check img {
 }
 @keyframes advancedOrder {
 0% { 
-    background-color: #D9F7F0;
+    background-color: #F1FAF8;
      opacity: 1;
     }
     50% {
@@ -872,7 +872,7 @@ p.driver-check img {
         opacity: 1;
         }
     100% {
-        background-color: #fff;
+        background-color: #F1FAF8;
         opacity: 1;
         }
     }
