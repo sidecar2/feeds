@@ -9,6 +9,424 @@
  body {
      height: 100%;
  }
+
+body.feeds-index {
+    background: #1A1A1C;
+    color: #fff;
+    font-family: "Akkurat";
+}
+
+h5.center {
+    text-align: center;
+    font-size: 42px;
+}
+
+/*
+ * Title page
+ */
+
+ul.prototype-links {
+    list-style: none;
+    font-weight: 600;
+    font-size: 24px;
+}
+li.proto-link {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+li.proto-link a {
+color: #fff;
+opacity: .6;
+}
+
+/*
+ * Full width
+ */
+
+
+body.feeds-prototypes {
+    background: #1A1A1C;
+    font-family: "Akkurat";
+}
+
+body.feeds-prototypes .content-wrapper {
+    width: 98%;
+}
+.table-header ul {
+    list-style: none;
+    margin-top: 0;
+}
+.table-header ul li {
+    display: inline-block;
+    width: 19%;
+    vertical-align: middle;
+}
+
+
+.table-header ul li .wire {
+    height: 6px; 
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    width: 20%;
+}
+.wire {
+    height: 6px; 
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
+    width: 80%;
+}
+
+.order ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.order ul li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12%;
+    margin: 8px 0;
+}
+
+ .order ul li.ofo {
+    width: 5%;
+    display: flex;
+}
+.ofo-logo {
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 40px;
+
+}
+
+.order-list ul li.ofo-info {
+    width: 8%;
+}
+
+.order-list ul li.info {
+    padding-left: 5%;
+}
+li.second.info {
+    width: 18%;
+}
+li.second .wire {
+    width: 90%;
+}
+li.third.info {
+    width: 10%;
+}
+
+li.fourth {
+    width: 12%;
+}
+li.fifth {
+    width: 8%;
+}
+li.time {
+    width: 10%;
+}
+
+li.time .wire {
+    width: 60%;
+    margin: 0 auto;
+}
+.time-wrapper {
+    background: rgba(218, 228, 242, 0.05);
+    width: 50%;
+    border-radius: 4px;
+    float: right;
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.footer.hide-footer {
+    display: none;
+}
+.footer {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background:#2D2E32;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer ul {
+    list-style: none;
+    vertical-align: middle;
+    margin: 8px 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    width: 12%;
+    margin-right: 8%;
+}
+
+.stat {
+    font-size: 24px;
+    color: rgba(218, 228, 242, 0.5);
+}
+
+.stat span {
+    background: rgba(255,255,255,0.15);
+    border-radius: 6px;
+    height: 3px;
+    width: 24px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.footer .wire {
+    height: 4px; 
+    background: rgba(255,255,255,0.15);
+    border-radius: 6px;
+}
+
+.footer ul li.status {
+    margin-left: 8%;
+    margin-right: 0;
+    width: 6%;
+    border-left: 1px solid rgba(218, 228, 242, 0.15);
+    padding-left: 2%;
+}
+
+
+.status-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    margin: 0 8%;
+}
+
+
+
+.actionable-orders {
+    background: rgba(218, 228, 242, 0.08);
+    display: none;
+    -webkit-transition: all 1.0s ease-in;
+    -moz-transition: all 1.0s ease-in;
+    -o-transition: all 1.0s ease-in;
+}
+.actionable-orders.has-order {
+    display: block;
+    -webkit-transition: all 1.0s ease-in;
+    -moz-transition: all 1.0s ease-in;
+    -o-transition: all 1.0s ease-in;
+}
+
+.order.active ul li div.wire {
+
+    background: rgba(255,255,255,0.3);
+    -webkit-transition: all 1.0s ease-in;
+    -moz-transition: all 1.0s ease-in;
+    -o-transition: all 1.0s ease-in;
+}
+
+body.feeds-prototypes.light {
+    background: #F7F7F7;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+body.feeds-prototypes.light div.wire, body.feeds-prototypes.light .footer .wire, body.feeds-prototypes.light .footer .stat span, body.feeds-prototypes.light .footer  .status-dot  {
+
+    background: #E1E1E1;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+body.feeds-prototypes.light .footer .stat {
+    color: #E1E1E1; 
+}
+body.feeds-prototypes.light div.ofo-logo  {
+
+    background: #E1E1E1;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+
+body.feeds-prototypes.light .actionable-orders {
+    background: #fff;
+}
+
+body.feeds-prototypes.light .footer {
+    background: #fff
+}
+
+
+.order-list.float {
+    width: 50%;
+    float: left;
+   
+}
+
+
+.order-list.float ul {
+    margin: 0;
+    height: 64px;
+}
+
+.order-list.float .order {
+    height: 64px;
+    font-size: 24px;
+}
+
+.order-list.float .order ul li.ofo {
+    width: 9%;
+}
+
+.order-list.float .order ul li.ofo-info {
+    width: 30%;
+}
+
+.order-list.float .order ul li.second.info {
+    width: 22%;
+    opacity: .7;
+}
+
+.order-list.float .order ul li.third.info {
+    width: 20%;
+    opacity: .7;
+}
+
+.order-list.float .order ul li .time-wrapper {
+    background: none;
+    opacity: .7;
+}
+
+ /* 3 column tweaks */
+
+ body.max-out.two .actionable-orders  .order-list.max-active ul {
+     height: 60px;
+     font-size: 24px;
+ }
+
+
+ body.max-out.two .order-list.float {
+     width: 33%;
+ }
+
+ body.max-out.two .order-list.float ul li.ofo-info {
+    width: 42%;
+}
+body.max-out.two .order-list.float ul li.ofo {
+    width: 12%;
+}
+
+body.max-out.two .order-list.float ul li.third.info {
+    width: 12%;
+     font-size: 22px;
+}
+body.max-out.two .order-list.float ul li.second.info {
+    width: 24%;
+    font-size: 22px;
+}
+
+ /* Three column - hit C */
+body.max-out.two.sixty .order-list.float ul {
+    margin: 0;
+    height: 50px;
+}
+
+body.max-out.two.sixty .order-list.float .order {
+    height: 50px;
+    font-size: 20px;
+}
+
+body.max-out.two.sixty .ofo-logo {
+    height: 36px;
+    width: 36px;
+}
+
+body.max-out.two.sixty .order-list.float ul li.second.info,b body.max-out.two.sixty .order-list.float .order ul li.third.info {
+    font-size: 20px;
+}
+
+ /* Three column - hit D */
+
+ body.max-out.two.forty-eight .order-list.float ul {
+    margin: 0;
+    height: 42px;
+}
+
+body.max-out.two.forty-eight .order-list.float .order {
+    height: 42px;
+    font-size: 18px;
+}
+
+body.max-out.two.forty-eight .ofo-logo {
+    height: 32px;
+    width: 32px;
+}
+
+body.max-out.two.forty-eight .order-list.float ul li.second.info, body.max-out.two.forty-eight .order-list.float .order ul li.third.info {
+    font-size: 16px;
+}
+ /* active orders max-experiment */
+ .order-list.max-active ul {
+     font-size: 26px;
+     margin: 0;
+ }
+
+.order-list.max-active ul li.ofo-info {
+    width: 24%;
+}
+.order-list.max-active ul li.second.info {
+    width: 16%;
+}
+.order-list.max-active ul li.third.info {
+    width: 16%;
+}
+
+ /* Try top actionable */
+.order.section-actionable {
+    display: none;
+    background: rgba(218, 228, 242, 0.15);
+}
+
+.order.section-actionable.new-order {
+    display: block;
+}
+ /* More dense */
+
+ body.max-out.one.sixty .order-list.float ul {
+    margin: 0;
+    height: 54px;
+}
+
+body.max-out.one.sixty .order-list.float .order {
+    height: 54px;
+    font-size: 20px;
+}
+
+body.max-out.one.forty-eight .order-list.float ul {
+    margin: 0;
+    height: 48px;
+}
+body.max-out.one.forty-eight .order-list.float .order {
+    height: 48px;
+    font-size: 18px;
+}
+body.max-out.one.forty-eight .ofo-logo {
+    height: 36px;
+    width: 36px;
+}
+
+
+
 body.expo {
     /* background-image: url('../img/blurry-bg@2X.png'); */
     background-image:linear-gradient(-155deg, rgba(15,16,34,0.62) 0%, #313356 100%), 
@@ -821,8 +1239,8 @@ body.facility .order-container.master  ul.order li.order-actions.alert {
     
 }
 .master-order.state-changed  .order {
-    animation-name: advancedOrder;
-    animation-duration: 1500ms;
+    animation-name: advancedOrderDark;
+    animation-duration: 2000ms;
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
     animation-play-state: running;
@@ -876,6 +1294,21 @@ p.driver-check img {
         opacity: 1;
         }
     }
+
+    @keyframes advancedOrderDark {
+        0% { 
+            background-color: rgba(32, 188, 154, 0.2);
+             opacity: 1;
+            }
+            50% {
+                background-color:rgba(32, 188, 154, 0.3);
+                opacity: 1;
+                }
+            100% {
+                background-color: rgba(32, 188, 154, 0.2);
+                opacity: 1;
+                }
+            }
 
 
 body.facility .order-container.order-cooking {
