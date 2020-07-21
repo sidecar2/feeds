@@ -1179,6 +1179,14 @@
        $(".section-actionable.new-order").toggleClass("add-color");  
       $(".waiting-orders .order").last().remove();
     }
+    if (e.which == 80) 
+    {
+      $(".order:nth-child(6n+4)").toggleClass("activated"); 
+    }
+    if (e.which == 79) 
+    {
+      $(".order:nth-child(6)").toggleClass("activated red"); 
+    } 
 
     if (e.which == 65) 
     {
