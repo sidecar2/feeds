@@ -236,7 +236,16 @@ body.feeds-prototypes.light {
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
+    color: #000;
 }
+
+body.feeds-prototypes.light .content-wrapper { 
+    color: #1A1A1C;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
 
 body.feeds-prototypes.light div.wire, body.feeds-prototypes.light .footer .wire, body.feeds-prototypes.light .footer .stat span, body.feeds-prototypes.light .footer  .status-dot  {
 
@@ -400,6 +409,20 @@ body.max-out.two.forty-eight .order-list.float ul li.second.info, body.max-out.t
 .order.section-actionable.new-order {
     display: block;
 }
+
+.order.section-actionable.new-order.add-color {
+    background: rgba(32, 188, 154, 0.3);
+}
+.order.section-actionable.r-order.new-order.add-color {
+
+    background: rgba(255, 48, 8, 0.31);
+
+}
+
+
+.order-list .order.activated {
+    background: rgba(218, 228, 242, 0.15);
+}
  /* More dense */
 
  body.max-out.one.sixty .order-list.float ul {
@@ -424,8 +447,80 @@ body.max-out.one.forty-eight .ofo-logo {
     height: 36px;
     width: 36px;
 }
+ /* even denser */
 
+ body.max-out.one.forty .order-list.float .order, body.max-out.two.forty .order-list.float .order {
+    height: 40px;
+    font-size: 18px;
+}
+body.max-out.one.forty .ofo-logo, body.max-out.two.forty .ofo-logo {
+    height: 30px;
+    width: 30px;
+}
+body.max-out.one.forty .order-list.float ul, body.max-out.two.forty .order-list.float ul  {
+    margin: 0;
+    height: 40px;
+}
 
+ /* sidebar layout */
+
+ .waiting-orders.sidebar-layout { 
+    float: right;
+    width: 33%;
+ }
+
+ .waiting-orders.sidebar-layout .content-wrapper {
+     min-width: 98%;
+ }
+.actionable-orders.primary {
+    float: left;
+    display: block;
+    width: 66%;
+    background: none;
+}
+
+.order-list.float.sidebar {
+    width: 98%;
+}
+
+.order-list.float.sidebar .order {
+    height: 54px;
+}
+.order-list.float.sidebar ul {
+    padding: 0;
+}
+
+.order-list.float.sidebar .order ul li.ofo-info {
+    width: 40%;
+    font-size: 20px;
+}
+
+.order-list.float.sidebar .order ul li.second.info {
+    font-size: 20px;
+}
+.order-list.float.sidebar .order .ofo-logo {
+    width: 36px;
+    height: 36px;
+}
+
+.actionable-orders.primary .order-list ul li.info {
+    padding-left: 0;
+}
+
+.actionable-orders.primary .order-list ul li.ofo-info {
+    width: 30%;
+}
+
+.actionable-orders.primary .order-list ul li.second.info, .actionable-orders.primary .order-list ul li.third.info {
+    width: 20%;
+}
+.order-list.float.sidebar .order ul  .hide-field {
+    display: none;
+}
+
+.order-list.float.sidebar .order ul li.third.info {
+    font-size: 20px;
+}
 
 body.expo {
     /* background-image: url('../img/blurry-bg@2X.png'); */

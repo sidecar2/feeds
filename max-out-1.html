@@ -75,6 +75,72 @@
 
         <div class="order-list float left">
             <!-- Order list --> 
+            <div class="order section-actionable indio">
+                    <ul>
+                        <li class="ofo"> 
+                            <div class="ofo-logo"></div>
+                        </li>
+                        <li class="ofo-info"> 
+                            El Indio
+                        </li>
+                        <li class="second info"> 
+                            Tonny 
+                        </li>
+                        <li class="third info"> 
+                            Locker 4 
+                        </li>
+                        <li class="time"> 
+                            <div class="time-wrapper">
+                                12:11
+                            </div>
+                        </li>
+                
+                    </ul>
+                </div>
+                <div class="order section-actionable fg">
+                        <ul>
+                            <li class="ofo"> 
+                                <div class="ofo-logo"></div>
+                            </li>
+                            <li class="ofo-info"> 
+                                Five Guys
+                            </li>
+                            <li class="second info"> 
+                                Mary G 
+                            </li>
+                            <li class="third info"> 
+                                Locker 5
+                            </li>
+                            <li class="time"> 
+                                <div class="time-wrapper">
+                                    9:32 
+                                </div>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                    <div class="order">
+                        <ul>
+                            <li class="ofo"> 
+                                <div class="ofo-logo"></div>
+                            </li>
+                            <li class="ofo-info"> 
+                                Belcampo
+                            </li>
+                            <li class="second info"> 
+                                Kate
+                            </li>
+                            <li class="third info"> 
+                                Locker 6
+                            </li>
+                
+                            <li class="time"> 
+                                <div class="time-wrapper">
+                                    2:09
+                                </div>
+                            </li>
+                        </ul>
+                    </div>        
             <div class="order">
                 <ul>
                     <li class="ofo"> 
@@ -297,7 +363,7 @@
                             <div class="ofo-logo"></div>
                         </li>
                         <li class="ofo-info"> 
-                            Fire Ass Thai
+                            Firehouse Subs
                         </li>
                         <li class="second info"> 
                             Tanner
@@ -318,7 +384,7 @@
                             <div class="ofo-logo"></div>
                         </li>
                         <li class="ofo-info"> 
-                            Firehouse Subs
+                                Fire Ass Thai 
                         </li>
                         <li class="second info"> 
                             Jimmy
@@ -374,7 +440,28 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>           
+                        </div>   
+                        <div class="order">
+                                <ul>
+                                    <li class="ofo"> 
+                                        <div class="ofo-logo"></div>
+                                    </li>
+                                    <li class="ofo-info"> 
+                                        Garage Pizza
+                                    </li>
+                                    <li class="second info"> 
+                                        Mario N
+                                    </li>
+                                    <li class="third info"> 
+                                        Locker 12
+                                    </li>
+                                    <li class="time"> 
+                                        <div class="time-wrapper">
+                                            2:16
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>        
                 <div class="order">
                     <ul>
                         <li class="ofo"> 
@@ -635,6 +722,27 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="order">
+                            <ul>
+                                <li class="ofo"> 
+                                    <div class="ofo-logo"></div>
+                                </li>
+                                <li class="ofo-info"> 
+                                    Moonbowls
+                                </li>
+                                <li class="second info"> 
+                                    Cindy G 
+                                </li>
+                                <li class="third info"> 
+                                    Locker 9
+                                </li>
+                                <li class="time"> 
+                                    <div class="time-wrapper">
+                                        2:31
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     <div class="order">
                             <ul>
                                 <li class="ofo"> 
@@ -918,9 +1026,32 @@
     {
         $("body").toggleClass("forty-eight"); 
     }
+    if (e.which == 69) 
+    {
+        $("body").toggleClass("forty"); 
+    }
     if (e.which == 72) 
     {
         $(".footer").toggleClass("hide-footer"); 
+    }
+    if (e.which == 84) 
+    {
+       $(".order-list.float .section-actionable.indio").toggleClass("new-order");  
+      $(".waiting-orders .order").last().remove();
+    }
+    if (e.which == 89) 
+    {
+       $(".order-list.float .section-actionable.fg").toggleClass("new-order");  
+      $(".waiting-orders .order").last().remove();
+    }
+    
+    if (e.which == 80) 
+    {
+      $(".order:nth-child(6)").toggleClass("activated"); 
+    }
+    if (e.which == 79) 
+    {
+      $(".order:nth-child(11)").toggleClass("activated"); 
     }
     if (e.which == 65) 
     {

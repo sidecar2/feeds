@@ -769,6 +769,23 @@
                     </div>
                     <!-- Right section -->
                     <div class="order-list float right">
+                            <div class="order section-actionable r-order">
+                                    <ul>
+                                        <li class="ofo"> 
+                                            <div class="ofo-logo"></div>
+                                        </li>
+                                        <li class="ofo-info"> 
+                                            Thai Thai Thai
+                                        </li>
+                                        <li class="second info"> 
+                                            Sandra N 
+                                        </li>
+                                        <li class="third info"> 
+                                            L9 
+                                        </li>
+                                
+                                    </ul>
+                                </div>
 
                         <div class="order">
                                 <ul>
@@ -1133,6 +1150,11 @@
     {
         $("body").toggleClass("forty-eight"); 
     }
+    if (e.which == 69) 
+    {
+        $("body").toggleClass("forty"); 
+    }
+
     if (e.which == 72) 
     {
         $(".footer").toggleClass("hide-footer"); 
@@ -1147,6 +1169,17 @@
        $(".order-list.float .section-actionable.fg").toggleClass("new-order");  
       $(".waiting-orders .order").last().remove();
     }
+    if (e.which == 85) 
+    {
+       $(".order-list.float .section-actionable.r-order").toggleClass("new-order");  
+      $(".waiting-orders .order").last().remove();
+    }
+    if (e.which == 73) 
+    {
+       $(".section-actionable.new-order").toggleClass("add-color");  
+      $(".waiting-orders .order").last().remove();
+    }
+
     if (e.which == 65) 
     {
       $("body").toggleClass("light"); 
