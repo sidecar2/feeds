@@ -528,6 +528,376 @@ body.max-out.one.forty .order-list.float ul, body.max-out.two.forty .order-list.
     font-size: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+body.max-out.ui-v1 {
+    background: #1A1E24;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family: 'Approach';
+}
+
+
+
+body.max-out.ui-v1 .content-wrapper {
+    width: 100%;
+}
+
+body.max-out.ui-v1 .order-list.float ul {
+    padding: 0;
+}
+
+body.max-out.ui-v1 .order-list.float.right .order {
+   margin-left: 6px;
+}
+
+body.max-out.ui-v1 .content-wrapper {
+    padding: 0;
+    background: #262A31;
+}
+
+
+body.max-out.ui-v1 .content-wrapper:after {
+content: "";
+position: absolute;
+z-index: 99;
+top: 0;
+bottom: 0;
+left: 50%;
+border-left: 12px solid #1A1E24;
+transform: translate(-50% );
+}
+
+body.max-out.ui-v1 .table-header ul {
+    margin: 16px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    color: #A8AAAD;
+    padding: 8px 0 0 20px;
+    background: #262A31;
+}
+
+body.max-out.ui-v1 .order-list.float .order {
+    height: 52px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.max-out.ui-v1 .order-list.float ul {
+    height: 52px;
+    font-weight: 400;
+}
+
+body.max-out.ui-v1 .order-list.float .order ul li.ofo {
+    width: 32px;
+    padding: 0 16px;
+}
+
+body.max-out.ui-v1 .order-list.float .order ul li.ofo img {
+    vertical-align: top;
+}
+.clear {
+    clear: both;
+}
+
+body.max-out.ui-v1 .order ul .ofo-logo {
+    width: 32px;
+    height: 32px;
+    opacity: .6;
+}
+
+body.max-out.ui-v1 .order-list.float ul li.third.info {
+    width: 10%;
+    padding-left: 0;
+    text-align: center;
+}
+body.max-out.ui-v1 .order-list.float .order ul li.ofo-info {
+    width: 32%;
+    font-weight: 500;
+
+}
+
+body.max-out.ui-v1 .order-list.float .order ul li.time {
+    margin-left: 6%;
+}
+body.max-out.ui-v1 .footer {
+background: #1A1E24;
+z-index: 999;
+}
+
+
+body.max-out.ui-v1 .footer .stat {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.max-out.ui-v1 .footer .stat span {
+    background: none;
+    font-size: 12px;
+}
+body.max-out.ui-v1 .order-list.float .order ul li {
+    color: #A8AAAD;
+    letter-spacing: -0.3px;
+    opacity: 1;
+}
+
+body.max-out.ui-v1 .order-list.float .order.active ul li {
+    font-weight: 500;
+}
+
+body.max-out.ui-v1 .order-list.float .order.active {
+    box-shadow: 4px 0 0 0 #74D372 inset;
+}
+body.max-out.ui-v1 .order-list.float .order.active.late {
+    box-shadow: 4px 0 0 0 #F77249 inset;
+}
+
+
+body.max-out.ui-v1 .order-list.float .order.active ul li.third.info {
+    background: #74D372;
+    color: #262A31;
+    line-height: 40px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+body.max-out.ui-v1 .order-list.float .order.active.late ul li.third.info {
+    background: none;
+    color: #fff;
+  
+}
+body.max-out.ui-v1 .order-list.float .order.active.late ul li .time-wrapper {
+    background: #F77249;
+    color: #262A31;
+    line-height: 40px;
+    border-radius: 2px;
+    font-weight: 600;
+    padding: 0 16px;
+  
+}
+
+body.max-out.ui-v1  .order-list.float .order ul li .time-wrapper {
+    color: #A8AAAD;
+    opacity: 1;
+    letter-spacing: -0.4px;
+}
+
+body.max-out.ui-v1 .order-list.float .order.active ul li, body.max-out.ui-v1 .order-list.float .order.active ul li .time-wrapper {
+    color: #fff;
+}
+
+body.max-out.ui-v1 .order-list.float .order.active ul li.third.ready {
+    padding: 2px 
+}
+
+
+body.max-out.ui-v1 .order.active ul .ofo-logo {
+    width: 32px;
+    height: 32px;
+    opacity: .6;
+}
+
+body.max-out.ui-v1 .order.active ul .ofo-logo {
+    opacity: 1;
+}
+
+
+body.max-out.ui-v1 .footer ul {
+    padding: 0 16px;
+}
+
+.stat-type span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.status-yellow {
+    height: 24px; 
+    width: 24px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6px;
+   
+  }
+
+  .footer ul li.stat-type {
+      margin-right: 15%;  
+  }
+  .footer ul li.stat-type span {
+    vertical-align: super;
+
+  }
+  .footer ul li.figures {
+      width: 8%;
+      margin-right: 12%;
+  }
+  .footer ul li.figures.stat-three {
+      margin-right: 0;
+  }
+  .circle { 
+    height: 8px;  
+    width: 8px; 
+    border-radius: 50%;  
+    background: #74D372; 
+    position: relative;
+    z-index: 10; 
+    right: -7px; 
+    top: 8px;
+    border: 1px solid #000;
+    margin-top: 6px;
+  }
+  
+  .pulse {
+    position: absolute; 
+    background: rgba(116, 211, 114, 0.9);
+    width: 24px;
+    height: 24px; 
+    content: '';
+    z-index
+    right: 0;
+    top: 1px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 99;
+    margin-top: 6px;
+  }
+  
+  @-webkit-keyframes "pulse" {
+   0% {
+      -webkit-transform: scale(0);
+      opacity: 0.0;
+   }
+   25% {
+      -webkit-transform: scale(0);
+      opacity: 0.1;
+   }
+   50% {
+      -webkit-transform: scale(0.1);
+      opacity: 0.3;
+   }
+   75% {
+      -webkit-transform: scale(0.5);
+      opacity: 0.5;
+   }
+   100% {
+      -webkit-transform: scale(1);
+      opacity: 0.0;
+   }
+  }
+
+
+
+  body.max-out.ui-v1.one.sixty .order-list.float .order {
+      height: 42px;
+  }
+
+  body.max-out.ui-v1.one.sixty .order-list.float ul {
+      height: 42px;
+  }
+
+  body.max-out.ui-v1.sixty .order ul .ofo-logo {
+      height: 30px;
+      width: 30px;
+  }
+
+  body.max-out.ui-v1.sixty .order-list.float .order.active ul li.third.info {
+      line-height: 32px;
+  }
+  body.max-out.ui-v1.sixty .order-list.float .order.active.late ul li .time-wrapper {
+      line-height: 32px;
+  }
+
+
+
+
+
+  body.max-out.ui-v1 .order-list.float .order.new-order ul li,   body.max-out.ui-v1 .order-list.float .order.new-order ul li .time-wrapper,  body.max-out.ui-v1 .order-list.float .order.new-order-orange ul li, body.max-out.ui-v1 .order-list.float .order.new-order-orange ul li .time-wrapper {
+      color: #fff;
+  }
+
+  body.max-out.ui-v1 .order-list.float .order.new-order {
+    background-image: linear-gradient(90deg, rgba(116, 211, 114, 0), rgba(116, 211, 114,
+    0.2),rgba(116, 211, 114,
+    0.9), rgba(116, 211, 114,
+    1), rgba(16, 211, 114, 0.1),rgba(16, 211, 114, 0), rgba(16, 211, 114, 0) );
+      background-size: 500% 100%; 
+      animation: Animation 1s ease 5;
+      animation-duration: 6s;
+      color: #fff;
+  }
+  
+  @keyframes Animation { 
+      0%{background-position:0% 0%}
+      50%{background-position:100% 60%}
+      100%{background-position:100% 100%}
+  }
+  
+
+
+  body.max-out.ui-v1 .order-list.float .order.new-order-orange {
+
+        background-image: linear-gradient(90deg, rgba(255, 118, 75, 0), rgba(255, 118, 75,
+        0.2),rgba(255, 118, 75,
+        0.9), rgba(255, 118, 75,1), rgba(255, 118, 75, 0.1),rgba(255, 118, 75, 0), rgba(255, 118, 75, 0) );
+          background-size: 500% 100%; 
+          animation: warning 1s ease 5;
+          animation-duration: 6s;
+          color: #fff;
+      }
+      
+      @keyframes warning { 
+          0%{background-position:0% 0%}
+          50%{background-position:100% 60%}
+          100%{background-position:100% 100%}
+  }
+
+  body.max-out.ui-v1.invert .order-list.float .order.active ul li.third.info {
+    background: #549852;
+    color: #fff;
+  }
+
+  body.max-out.ui-v1.invert .order-list.float .order.active.late ul li .time-wrapper {
+    background: #D0693D;
+    color: #fff;
+  }
+
+  body.max-out.ui-v1.invert .order-list.float .order.active.late ul li.third.info {
+    background: none;
+    color: #fff;
+  
+}
+
+
+body.max-out.ui-v1.invert .footer ul li.figures {
+    width: 12%;
+    margin-right: 8%;
+}
+
+body.max-out.ui-v1.invert .footer .stat span {
+    width: 120px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+body.max-out.ui-v1.invert .order-list.float .order.active {
+    box-shadow: 4px 0 0 0 #549852 inset;
+}
+body.max-out.ui-v1.invert .order-list.float .order.active.late {
+    box-shadow: 4px 0 0 0 #D0693D inset;
+}
+
+
+body.max-out.ui-v1.invert .footer ul li.stat-type {
+    margin-right: 13%;
+}
+
 body.expo {
     /* background-image: url('../img/blurry-bg@2X.png'); */
     background-image:linear-gradient(-155deg, rgba(15,16,34,0.62) 0%, #313356 100%), 
@@ -1100,6 +1470,81 @@ p.modifier-name {
     font-weight: normal;
     font-style: normal;
 
+}
+
+
+
+
+@font-face {
+    font-family: 'Approach ExtraBlack';
+    src: url('../fonts/Approach-ExtraBlack.woff2') format('woff2'),
+        url('../fonts/Approach-ExtraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-Medium.woff2') format('woff2'),
+        url('../fonts/Approach-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-Black.woff2') format('woff2'),
+        url('../fonts/Approach-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-Bold.woff2') format('woff2'),
+        url('../fonts/Approach-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-Light.woff2') format('woff2'),
+        url('../fonts/Approach-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-SemiBold.woff2') format('woff2'),
+        url('../fonts/Approach-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach';
+    src: url('../fonts/Approach-Regular.woff2') format('woff2'),
+        url('../fonts/Approach-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Approach UltraBlack';
+    src: url('../fonts/Approach-UltraBlack.woff2') format('woff2'),
+        url('../fonts/Approach-UltraBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 .popup-overlay {
