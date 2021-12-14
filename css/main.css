@@ -1979,9 +1979,16 @@ div #input {
     border-radius: 8px;
     color: #A3A3A3;
     border: 1px solid #E0E0E0;
-    padding: 8px;
-    font-size: 12px;
+    padding: 12px 8px;
+    font-size: 14px;
     font-weight: 300;
+}
+.help {
+    position: fixed; 
+    bottom: 24px;
+    left: 48%;
+    color: #666666;
+
 }
 /* ==========================================================================
    Base styles: opinionated defaults
