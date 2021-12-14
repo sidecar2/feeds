@@ -1946,6 +1946,43 @@ body.header-hidden.night-mode .order-cooking .t-heading img {
 body.facility.night-mode p.sub-text {
     color: rgba(255,255,255,.7)
 }
+
+body.driver-index {
+    background: #fff;
+    padding: 40px 0px;
+    font-family: 'Approach';
+}
+
+.mobile-content {
+    margin: 0 auto;
+    width: 90%;
+}
+
+img.foodhall {
+    width: 100px;
+    height: 100px;
+}
+
+h6.welcome {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 40px 0 8px;
+}
+
+h2.instruct {
+    font-size: 24px;
+    margin: 0 0 24px;
+    font-size: 32px;
+    font-weight: 600;
+}
+div #input { 
+    border-radius: 8px;
+    color: #A3A3A3;
+    border: 1px solid #E0E0E0;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 300;
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
